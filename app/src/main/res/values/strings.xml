@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="len">Length</string>
+    <string name="weight">Weight</string>
+    <string name="temp">Temp</string>
+    <string name="help">Help</string>
+    <string name="mm">mm</string>
+    <string name="cm">cm</string>
+    <string name="m">m</string>
+    <string name="km">km</string>
+    <string name="in">inches</string>
+    <string name="ft">ft</string>
+    <string name="yd">yd</string>
+    <string name="mi">miles</string>
+    <string name="mg">mg</string>
+    <string name="g">g</string>
+    <string name="kg">kg</string>
+    <string name="ton">ton</string>
+    <string name="oz">oz</string>
+    <string name="lb">lb</string>
+    <string name="f">`F</string>
+    <string name="c">`C</string>
+    <string name="k">K</string>
+    <string name = "zero">0</string>
+    <string name="type">Type here</string>
+    <string name = "thanks">Thank you for using this unit converter app. It was developed by Anirudh Venkataramanan. Please email any questions and concerns to anirudhv@purdue.edu.</string>
+</resources>

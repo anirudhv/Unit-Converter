@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        tools:layout_editor_absoluteX="-45dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ruler"
+            android:text="@string/len" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/weight"
+            android:text="@string/weight" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/thermometer"
+            android:text="@string/temp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/help"
+            android:text="@string/help" />
+    </com.google.android.material.tabs.TabLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:stretchColumns="1">
+        <TableRow>
+            <EditText
+                android:id="@+id/inputNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="@string/type"
+                android:inputType="numberDecimal"
+                android:textColor="@color/orange" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="50" />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarSize="3dp"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valOne"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/mm"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/cm"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valThree"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/three"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/m"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valFour"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/four"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/km"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valFive"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/five"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/in"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valSix"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/six"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/ft"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valSeven"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/seven"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/yd"
+                        android:textColor="@color/black" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/valEight"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/eight"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:text="@string/mi"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
